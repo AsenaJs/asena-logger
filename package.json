@@ -1,0 +1,48 @@
+{
+  "name": "@asenajs/asena-logger",
+  "version": "1.0.0",
+  "author": "LibirSoft",
+  "main": "dist/index.js",
+  "module": "index.ts",
+  "devDependencies": {
+    "@asenajs/asena": "^0.3.0",
+    "@changesets/cli": "^2.29.3",
+    "@types/bun": "latest",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint": "^8.57.1",
+    "eslint-config-alloy": "^5.1.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-alloy": "^1.2.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-promise": "^6.6.0",
+    "prettier": "^3.5.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "description": "Just a logger for AsenaJS",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "test:coverage": "bun test --coverage",
+    "build": "bun run clean && tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "bun run build"
+  },
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AsenaJs/asena-logger.git"
+  },
+  "dependencies": {
+    "winston": "^3.17.0"
+  }
+}
