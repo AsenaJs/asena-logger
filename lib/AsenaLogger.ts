@@ -10,7 +10,6 @@ const levelToColorMap = {
 };
 
 export class AsenaLogger implements ServerLogger {
-
   private logger: winston.Logger;
 
   public constructor(
@@ -148,5 +147,4 @@ export class AsenaLogger implements ServerLogger {
   public log(level: string, message: string, meta?: any): void {
     this.logger.log(level, message, meta);
   }
-
 }
