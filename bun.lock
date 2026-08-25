@@ -8,7 +8,7 @@
         "winston": "^3.19.0",
       },
       "devDependencies": {
-        "@asenajs/asena": "^0.10.0",
+        "@asenajs/asena": "^0.11.0",
         "@changesets/cli": "^2.30.0",
         "@types/bun": "latest",
         "@typescript-eslint/eslint-plugin": "^6.21.0",
@@ -23,13 +23,13 @@
         "prettier": "^3.8.1",
       },
       "peerDependencies": {
-        "@asenajs/asena": "^0.10.0",
+        "@asenajs/asena": "^0.11.0",
         "typescript": "^5.8.3",
       },
     },
   },
   "packages": {
-    "@asenajs/asena": ["@asenajs/asena@0.10.0", "", { "dependencies": { "reflect-metadata": "^0.2.2" } }, "sha512-9UIjCWQARpWV5UWthaMPBVstN2/VTysGLSGV44MO8qeN6PSPhIa92jNgbMeVru1/d0MtJWiPjZnYV2g2ky8OeQ=="],
+    "@asenajs/asena": ["@asenajs/asena@0.11.0", "", { "dependencies": { "reflect-metadata": "^0.2.2" } }, "sha512-ilDbpmqDooqpU8lTz7VfLMFZ/ngjsNslG73gf7V1sdtW/V3AjxvtTAsF6KntM/DmtVC42ZN4lCMYjFlBzdm+bw=="],
 
     "@babel/runtime": ["@babel/runtime@7.27.1", "", {}, "sha512-1x3D2xEk2fRo3PAhwQwu5UubzgiVWSXTBfWpVd2Mx2AzRqJuDJCsgaDVZ7HB5iGzDW1Hl1sWN2mFyKjmR9uAog=="],
 
