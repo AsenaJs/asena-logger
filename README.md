@@ -1,7 +1,7 @@
 
 # AsenaLogger
 
-[![Version](https://img.shields.io/badge/version-3.0.0-blue.svg)](https://github.com/AsenaJs/asena-logger)
+[![Version](https://img.shields.io/npm/v/@asenajs/asena-logger.svg)](https://github.com/AsenaJs/asena-logger)
 [![Bun Version](https://img.shields.io/badge/Bun-1.4%2B-blueviolet)](https://bun.sh)
 
 Just a Winston-based logging solution for the Asena.js framework.
