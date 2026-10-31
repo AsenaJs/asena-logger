@@ -1,5 +1,11 @@
 # @asenajs/asena-logger
 
+## 3.0.1
+
+### Patch Changes
+
+- b216993: `@asenajs/asena` 0.12.x is now an accepted peer. No behaviour change.
+
 ## 3.0.0
 
 ### Major Changes
