@@ -1,5 +1,11 @@
 # @asenajs/asena-logger
 
+## 3.0.2
+
+### Patch Changes
+
+- 68cccec: Accept @asenajs/asena 0.13 as a peer.
+
 ## 3.0.1
 
 ### Patch Changes
