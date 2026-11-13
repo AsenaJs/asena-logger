@@ -15,9 +15,7 @@
     "eslint-plugin-alloy": "^1.2.1",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-prettier": "^5.5.6",
-    "eslint-plugin-promise": "^6.6.0",
-    "prettier": "^3.9.6"
+    "eslint-plugin-promise": "^6.6.0"
   },
   "peerDependencies": {
     "@asenajs/asena": "^0.11.0 || ^0.12.0 || ^0.13.0",
@@ -46,8 +44,8 @@
     "release": "bun run build && changeset publish",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "format": "bun fmt",
+    "format:check": "bun fmt --check",
     "check": "bun run lint && bun run format:check",
     "check:fix": "bun run lint:fix && bun run format"
   },
