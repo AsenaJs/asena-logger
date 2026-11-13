@@ -2,7 +2,7 @@ import winston from 'winston';
 import { blue, green, red, type ServerLogger, yellow } from '@asenajs/asena/logger';
 import { LEVEL, MESSAGE, SPLAT } from 'triple-beam';
 
-const levelToColorMap = {
+const levelToColorMap: Record<string, (text: string) => string> = {
   info: green,
   warn: yellow,
   error: red,
