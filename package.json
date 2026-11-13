@@ -44,8 +44,8 @@
     "release": "bun run build && changeset publish",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "format": "bun fmt",
-    "format:check": "bun fmt --check",
+    "format": "bun fmt --no-config",
+    "format:check": "bun fmt --check --no-config",
     "check": "bun run lint && bun run format:check",
     "check:fix": "bun run lint:fix && bun run format"
   },
