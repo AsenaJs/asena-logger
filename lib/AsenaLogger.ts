@@ -64,7 +64,7 @@ export class AsenaLogger implements ServerLogger {
             // If message is an object, stringify it
             try {
               logString += JSON.stringify(message, null, ' ');
-            } catch (e) {
+            } catch {
               logString += '[Unserializable Object]';
             }
           } else {
@@ -90,7 +90,7 @@ export class AsenaLogger implements ServerLogger {
           if (Object.keys(metadata).length > 0) {
             try {
               logString += ` ${JSON.stringify(metadata, null, 1)}`;
-            } catch (e) {
+            } catch {
               logString += ' [Unserializable Metadata]';
             }
           }
