@@ -8,18 +8,21 @@
     "@asenajs/asena": "^0.11.0",
     "@changesets/cli": "^3.0.3",
     "@types/bun": "latest",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^8.72.2",
+    "@typescript-eslint/parser": "^8.72.2",
+    "@typescript/native": "npm:typescript@^7.0.2",
     "eslint": "^8.57.1",
     "eslint-config-alloy": "^5.1.2",
     "eslint-config-prettier": "^9.1.2",
     "eslint-plugin-alloy": "^1.2.1",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.6.0"
+    "eslint-plugin-promise": "^6.6.0",
+    "typescript": "npm:@typescript/typescript6@^6.0.2"
   },
   "peerDependencies": {
     "@asenajs/asena": "^0.11.0 || ^0.12.0 || ^0.13.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3 || ^6.0.0 || ^7.0.0"
   },
   "description": "Just a logger for AsenaJS",
   "files": [

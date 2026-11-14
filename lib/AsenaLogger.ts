@@ -2,7 +2,7 @@ import winston from 'winston';
 import { blue, green, red, type ServerLogger, yellow } from '@asenajs/asena/logger';
 import { LEVEL, MESSAGE, SPLAT } from 'triple-beam';
 
-const levelToColorMap = {
+const levelToColorMap: Partial<Record<string, (text: string) => string>> = {
   info: green,
   warn: yellow,
   error: red,
@@ -49,7 +49,7 @@ export class AsenaLogger implements ServerLogger {
               return levelToColorMap[level]?.(level.toUpperCase()) || level.toUpperCase();
             }
 
-            return levelToColorMap['info']('PROFILE');
+            return green('PROFILE');
           };
 
           // Start building the log string with timestamp and level
@@ -64,7 +64,7 @@ export class AsenaLogger implements ServerLogger {
             // If message is an object, stringify it
             try {
               logString += JSON.stringify(message, null, ' ');
-            } catch (e) {
+            } catch {
               logString += '[Unserializable Object]';
             }
           } else {
@@ -90,7 +90,7 @@ export class AsenaLogger implements ServerLogger {
           if (Object.keys(metadata).length > 0) {
             try {
               logString += ` ${JSON.stringify(metadata, null, 1)}`;
-            } catch (e) {
+            } catch {
               logString += ' [Unserializable Metadata]';
             }
           }
