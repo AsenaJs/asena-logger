@@ -1,5 +1,11 @@
 # @asenajs/asena-logger
 
+## 3.0.3
+
+### Patch Changes
+
+- d043c75: Accept TypeScript 6 and 7 as peer dependencies alongside 5.8; the package's own type checking now runs under TypeScript 7 in strict mode.
+
 ## 3.0.2
 
 ### Patch Changes
