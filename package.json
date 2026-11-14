@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "module": "index.ts",
   "devDependencies": {
-    "@asenajs/asena": "^0.11.0",
+    "@asenajs/asena": "^0.12.4",
     "@changesets/cli": "^3.0.3",
     "@types/bun": "latest",
     "@typescript-eslint/eslint-plugin": "^8.72.2",
